@@ -1,0 +1,45 @@
+.workspace {
+    height: 100vh;
+}
+
+/**********************************Header**************************************/
+.workspace-header {
+    box-shadow: 0px 0px 5px 5px rgba(138,138,138,1);
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(138,138,138,1);
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.workspace-header-title {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.workspace-header-home {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    vertical-align: middle;
+}
+
+/**********************************Body****************************************/
+.workspace-body {
+    background: transparent;
+    display: table;
+    height: calc(100% - 40px);
+    width: 100%;
+}
+
+.workspace-contents {
+    /*border: 1px solid gray;*/
+    display: table-cell;
+    height: 80%;
+    margin: auto;
+    padding: 5% 10%;
+    vertical-align: middle;
+    width: 80%;
+}

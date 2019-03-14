@@ -1,0 +1,58 @@
+.description {
+    background: white;
+    box-shadow: 5px 0px 5px 0px rgba(138,138,138,1);
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(138,138,138,1);
+    height: 100vh;
+    width: 100%;
+}
+
+/**********************************Contents************************************/
+.description-contents {
+    height: 100vh;
+    overflow: hidden;
+    padding: 5%;
+}
+
+.description-header {
+    margin-bottom: 10px;
+}
+
+.description-body {
+    font-size: 16px;
+    font-weight: normal;
+    height: 90%;
+    overflow-y: auto;
+    padding-right: 10px;
+    width: 100%;
+}
+
+/**********************************Close button********************************/
+.description-close-button {
+    color: gray;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    height: 25px;
+    padding: 0 5px;
+    position: absolute;
+    left: 28%;
+    top: 0;
+    transition: left 0.5s;
+    width: 25px;
+    z-index: 10;
+}
+
+.description-container.description-closed 
+.description-close-button {
+    left: 20px;
+}
+
+.description-close-button:hover {
+    color: red;
+}
+
+.description.description-closed > 
+.description-close-button {
+    right: -45px;
+}
