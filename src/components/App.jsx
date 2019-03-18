@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Perceptron from './perceptron/Perceptron';
+import Dashboard from './dashboard/Dashboard';
 
 import '../styles/app.css';
 
@@ -8,7 +8,7 @@ class App extends Component {
     render = () => {
         return (
             <div className="app">   
-                <Perceptron />
+                <Dashboard />
             </div>
         );
     }

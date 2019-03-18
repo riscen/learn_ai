@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import '../../../styles/perceptron/description/description.css';
+import '../../../styles/dashboard/description/description.css';
 
 class Description extends Component {
     

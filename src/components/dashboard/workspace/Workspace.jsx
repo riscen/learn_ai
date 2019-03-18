@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import '../../../styles/perceptron/workspace/workspace.css';
+import '../../../styles/dashboard/workspace/workspace.css';
 
 class Workspace extends Component {
     render = () => {
