@@ -11,7 +11,7 @@ class Workspace extends Component {
                     <div className="workspace-header-title title">
                         Workspace
                     </div>
-                    <div className="workspace-header-home">   
+                    <div className="title workspace-header-home">   
                         <a href="#">Home</a>
                     </div>
                 </div>

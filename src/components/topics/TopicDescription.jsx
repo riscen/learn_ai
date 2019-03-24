@@ -16,7 +16,7 @@ class TopicDescription extends Component {
                     {this.props.children}
                 </div>
                 <div className="overview-go-up">
-        		    <input type="button" value="Go up" onClick={() => this.goUp()} />
+        		    <input className="button" type="button" value="Go up" onClick={() => this.goUp()} />
         		</div>
     		</Fragment>
         );

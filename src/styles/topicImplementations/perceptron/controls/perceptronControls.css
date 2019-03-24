@@ -1,0 +1,70 @@
+.perceptron-controls {
+    height: 96%;
+    padding: 2% 5%;
+}
+
+.perceptron-controls-header {
+    margin: 10px 0;
+}
+
+.perceptron-controls-widgets {
+    width: 100%;
+}
+
+.perceptron-controls-widget {
+    display: table;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.perceptron-controls-widget-label,
+.perceptron-controls-widget-input {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.perceptron-controls-widget-label {
+    padding-right: 5px;
+    width: 100px;
+}
+
+.perceptron-controls-widget-input {
+    text-align: right;
+    width: calc(100% - 105px);
+}
+
+.perceptron-controls-widget-input input {
+    width: 100%;
+}
+
+.perceptron-controls-widget-button-group {
+    text-align: center;
+    width: 100%;
+}
+
+.perceptron-controls-widget-button-group input[type="button"] {
+    margin: 0 2%;
+}
+
+.perceptron-controls-data {
+    height: 400px;
+}
+
+.perceptron-controls-data-body {
+    border-bottom: 2px solid #cee1ff;
+    height: 280px;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.perceptron-controls-data-body:hover {
+    overflow: auto;
+}
+
+.perceptron-controls-data >
+table td,
+.perceptron-controls-data-body > 
+table td {
+    width: 25%;
+}

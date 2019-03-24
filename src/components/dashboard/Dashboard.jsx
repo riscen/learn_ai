@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import Description from './description/Description';
 import Workspace from './workspace/Workspace';
 
 import TopicDescription from '../topics/TopicDescription';
 import PerceptronDescription from '../topics/perceptron/PerceptronDescription';
+import PerceptronUI from '../topicImplementations/perceptron/PerceptronUI';
 
 import '../../styles/dashboard/dashboard.css';
 
@@ -26,7 +27,7 @@ class Dashboard extends Component {
     
     render = () => {
         return (
-            <div className="perceptron">
+            <div className="dashboard">
                 <div className={`description-container ${this.state.descriptionClosed ? 'description-closed' : 'description-open'}`}>
                     <Description title={'Perceptron'} toggleDescription={this.toggleDescription}>
                         <TopicDescription>
@@ -35,48 +36,10 @@ class Dashboard extends Component {
                     </Description>
                 </div>
                 <div 
-                    className={`title workspace-container ${this.state.descriptionClosed ? 'expanded' : ''}`}
+                    className={`workspace-container ${this.state.descriptionClosed ? 'expanded' : ''}`}
                 >
                     <Workspace>
-                        <div>
-                            <div>
-                                <span>This represents an element on the workspace.</span>
-                            </div>
-                            <div>  
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Num</th>
-                                            <th>Text</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>dsad</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>dsdasdad</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <p>
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                    laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                            </div>
-                        </div>
+                        <PerceptronUI />
                     </Workspace>
                 </div>
             </div>
@@ -84,6 +47,6 @@ class Dashboard extends Component {
     }
 }
 
-Dashboard.propTypes = {};
+// Dashboard.propTypes = {};
 
 export default Dashboard;
