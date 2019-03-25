@@ -1,5 +1,6 @@
 .perceptron-controls {
-    height: 96%;
+    border-left: 1px solid #cee1ff;
+    height: 100%;
     padding: 2% 5%;
 }
 
@@ -34,7 +35,7 @@
 }
 
 .perceptron-controls-widget-input input {
-    width: 100%;
+    width: 90%;
 }
 
 .perceptron-controls-widget-button-group {
@@ -43,23 +44,24 @@
 }
 
 .perceptron-controls-widget-button-group input[type="button"] {
-    margin: 0 2%;
+    margin: 1% 2%;
 }
 
 .perceptron-controls-data {
-    height: 400px;
+    height: 60%;
 }
 
 .perceptron-controls-data-body {
     border-bottom: 2px solid #cee1ff;
-    height: 280px;
+    height: 92%;
     margin: 0;
+    /*min-height: 100px;*/
     overflow: hidden;
     width: 100%;
 }
 
 .perceptron-controls-data-body:hover {
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .perceptron-controls-data >
@@ -67,4 +69,10 @@ table td,
 .perceptron-controls-data-body > 
 table td {
     width: 25%;
+}
+
+ @media only screen and (max-height: 768px) {
+  .perceptron-controls-data-body {
+        height: 55%;
+    }
 }

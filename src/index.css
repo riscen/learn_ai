@@ -79,7 +79,7 @@ table tr td {
   outline: none;
   padding: 2% 5%;
   transition: background 0.2s;
-  width: 100px;
+  width: 85px;
 }
 
 .button:hover {

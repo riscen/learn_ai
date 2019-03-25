@@ -153,13 +153,15 @@ class PerceptronUI extends Component {
         return  (
             <div className="perceptron">
                 <div className="perceptron-canvas">
-                    <canvas 
-                        ref={el => this.canvas = el} 
-                        height="500px"
-                        width="500px"
-                        onContextMenu={e => this.handleClick(e)}
-                        onClick={e => this.handleClick(e)}
-                    />
+                    <div className="perceptron-canvas-container">
+                        <canvas 
+                            ref={el => this.canvas = el} 
+                            height="350px"
+                            width="350px"
+                            onContextMenu={e => this.handleClick(e)}
+                            onClick={e => this.handleClick(e)}
+                        />
+                    </div>
                 </div>
                 <div className="perceptron-controls-container">
                     <PerceptornControls 
