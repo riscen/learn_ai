@@ -1,78 +1,75 @@
 .perceptron-controls {
-    border-left: 1px solid #cee1ff;
-    height: 100%;
-    padding: 2% 5%;
+  border-left: 1px solid #cee1ff;
+  height: 100%;
+  padding: 0 5%;
 }
 
 .perceptron-controls-header {
-    margin: 10px 0;
+  padding: 10px 0;
 }
 
 .perceptron-controls-widgets {
-    width: 100%;
+  width: 100%;
 }
 
 .perceptron-controls-widget {
-    display: table;
-    margin-bottom: 10px;
-    width: 100%;
+  display: table;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 .perceptron-controls-widget-label,
 .perceptron-controls-widget-input {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .perceptron-controls-widget-label {
-    padding-right: 5px;
-    width: 100px;
+  padding-right: 5px;
+  width: 100px;
 }
 
 .perceptron-controls-widget-input {
-    text-align: right;
-    width: calc(100% - 105px);
+  text-align: right;
+  width: calc(100% - 105px);
 }
 
 .perceptron-controls-widget-input input {
-    width: 90%;
+  width: 90%;
 }
 
 .perceptron-controls-widget-button-group {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .perceptron-controls-widget-button-group input[type="button"] {
-    margin: 1% 2%;
+  margin: 1% 2%;
 }
 
 .perceptron-controls-data {
-    height: 60%;
+  height: 60%;
 }
 
 .perceptron-controls-data-body {
-    border-bottom: 2px solid #cee1ff;
-    height: 92%;
-    margin: 0;
-    /*min-height: 100px;*/
-    overflow: hidden;
-    width: 100%;
+  border-bottom: 2px solid #cee1ff;
+  height: 85%;
+  margin: 0 0 20px 0;
+  overflow: hidden;
+  width: 100%;
 }
 
 .perceptron-controls-data-body:hover {
-    overflow-y: auto;
+  overflow-y: auto;
 }
 
-.perceptron-controls-data >
-table td,
-.perceptron-controls-data-body > 
-table td {
-    width: 25%;
+.perceptron-controls-data > table td,
+.perceptron-controls-data-body > table td {
+  width: 25%;
 }
 
- @media only screen and (max-height: 768px) {
+@media only screen and (max-width: 1250) {
   .perceptron-controls-data-body {
-        height: 55%;
-    }
+    height: 70%;
+  }
 }
