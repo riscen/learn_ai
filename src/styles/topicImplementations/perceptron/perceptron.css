@@ -24,7 +24,7 @@
 
 .perceptron-canvas canvas {
   border: 2px solid #cee1ff;
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .perceptron-controls-container {
